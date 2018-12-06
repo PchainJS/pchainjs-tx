@@ -1,6 +1,6 @@
 {
   "name": "pchainjs-tx",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "An simple module for creating, manipulating and signing pchain transactions",
   "main": "es5/index.js",
   "scripts": {
@@ -52,7 +52,7 @@
     "url": "https://github.com/PchainJS/pchainjs-tx"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/PchainJS/pchainjs-tx/issues"
   },
   "homepage": "",
   "standard": {

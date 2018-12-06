@@ -1,6 +1,6 @@
 # Transaction
 
-[index.js:48-307](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L48-L307 "Source code on GitHub")
+[index.js:48-315](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L48-L315 "Source code on GitHub")
 
 Creates a new transaction object.
 
@@ -41,7 +41,7 @@ var tx = new Transaction(rawTx);
 
 ## getBaseFee
 
-[index.js:268-274](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L268-L274 "Source code on GitHub")
+[index.js:276-282](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L276-L282 "Source code on GitHub")
 
 the minimum amount of gas the tx must have (DataFee + TxFee + Creation Fee)
 
@@ -49,7 +49,7 @@ Returns **BN**
 
 ## getChainId
 
-[index.js:179-181](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L179-L181 "Source code on GitHub")
+[index.js:181-183](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L181-L183 "Source code on GitHub")
 
 returns chain ID
 
@@ -57,7 +57,7 @@ Returns **Buffer**
 
 ## getDataFee
 
-[index.js:255-262](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L255-L262 "Source code on GitHub")
+[index.js:263-270](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L263-L270 "Source code on GitHub")
 
 The amount of gas paid for the data in this tx
 
@@ -65,7 +65,7 @@ Returns **BN**
 
 ## getSenderAddress
 
-[index.js:187-194](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L187-L194 "Source code on GitHub")
+[index.js:189-196](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L189-L196 "Source code on GitHub")
 
 returns the sender's address
 
@@ -73,7 +73,7 @@ Returns **Buffer**
 
 ## getSenderPublicKey
 
-[index.js:200-205](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L200-L205 "Source code on GitHub")
+[index.js:202-207](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L202-L207 "Source code on GitHub")
 
 returns the public key of the sender
 
@@ -81,7 +81,7 @@ Returns **Buffer**
 
 ## getUpfrontCost
 
-[index.js:280-284](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L280-L284 "Source code on GitHub")
+[index.js:288-292](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L288-L292 "Source code on GitHub")
 
 the up front amount that an account must have for this transaction to be valid
 
@@ -89,7 +89,7 @@ Returns **BN**
 
 ## hash
 
-[index.js:147-173](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L147-L173 "Source code on GitHub")
+[index.js:149-175](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L149-L175 "Source code on GitHub")
 
 Computes a sha3-256 hash of the serialized tx
 
@@ -101,7 +101,7 @@ Returns **Buffer**
 
 ## sign
 
-[index.js:235-249](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L235-L249 "Source code on GitHub")
+[index.js:243-257](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L243-L257 "Source code on GitHub")
 
 sign a transaction with a given private key
 
@@ -111,7 +111,7 @@ sign a transaction with a given private key
 
 ## toCreationAddress
 
-[index.js:138-140](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L138-L140 "Source code on GitHub")
+[index.js:140-142](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L140-L142 "Source code on GitHub")
 
 If the tx's `to` is to the creation address
 
@@ -119,7 +119,7 @@ Returns **Boolean**
 
 ## validate
 
-[index.js:291-306](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L291-L306 "Source code on GitHub")
+[index.js:299-314](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L299-L314 "Source code on GitHub")
 
 validates the signature and checks to see if it has enough gas
 
@@ -131,7 +131,7 @@ Returns **Boolean or String**
 
 ## verifySignature
 
-[index.js:211-229](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L211-L229 "Source code on GitHub")
+[index.js:213-237](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L213-L237 "Source code on GitHub")
 
 Determines if the signature is valid
 
@@ -139,7 +139,7 @@ Returns **Boolean**
 
 ## from
 
-[index.js:116-120](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L116-L120 "Source code on GitHub")
+[index.js:116-120](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L116-L120 "Source code on GitHub")
 
 **Properties**
 
@@ -147,7 +147,7 @@ Returns **Boolean**
 
 ## serialize
 
-[index.js:109-109](https://github.com/PchainJS/pchainjs-tx/blob/741c78d8bf44584fa39667620c9bdf2c44b50cd3/index.js#L109-L109 "Source code on GitHub")
+[index.js:109-109](https://github.com/PchainJS/pchainjs-tx/blob/eba1529794ee6a8d097e9e122d24fb7af961ef70/index.js#L109-L109 "Source code on GitHub")
 
 Returns the rlp encoding of the transaction
 

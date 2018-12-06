@@ -124,6 +124,8 @@ class Transaction {
     let chainId = Math.floor((sigV - 35) / 2)
     if (chainId < 0) chainId = 0
 
+    this._chainName = data.chainId;
+
     if(data.chainId) data.chainId = "0x"+ethUtil.keccak256(data.chainId).toString("hex");
 
     // set chainId
@@ -177,7 +179,7 @@ class Transaction {
    * @return {Buffer}
    */
   getChainId () {
-    return this._chainId
+    return this._chainName
   }
 
   /**
@@ -216,12 +218,18 @@ class Transaction {
     }
 
     try {
-      let v = ethUtil.bufferToInt(this.v)
+
+      let v = new BigNumber("0x"+this.v.toString("hex"),16);
+
       if (this._chainId > 0) {
-        v -= this._chainId * 2 + 8
+
+        const MyChainId = new BigNumber(this._chainId);
+        var tarV = v.minus(8).minus( MyChainId.times(2) );
+        v = tarV;
       }
       this._senderPubKey = ethUtil.ecrecover(msgHash, v, this.r, this.s)
     } catch (e) {
+      console.log(e)
       return false
     }
 
